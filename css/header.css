@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    font-family:'Nanum Gothic' , sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+
+    overflow-x:hidden;
+}
+
+.header{
+    width:100%;
+    height:8%;
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    align-items:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+
+    border-bottom:2px solid rgb(231,181,14);
+}
+
+.header > .logo{
+    background-image:url('img/logo.png');
+    background-size:cover;
+    width:202px;
+    height:39px;
+
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.header > .search-bar{
+    width:500px;
+    height:64%;
+
+    border:1px solid rgba(0,0,0,0.2);
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    align-items:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+
+}
+
+.header > .search-bar > .search-input{
+    width:90%;
+    height:90%;
+
+    outline:none;
+    border:none;
+
+    padding-left:4px;
+
+    font-size:1.5vw;
+}
+
+.header > .search-bar > i{
+    color:gray;
+}
+
+.btn-box{
+    width:calc(60% - 242px);
+    height:50%;
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    justify-content:flex-end;
+    -ms-flex-pack:end;
+    -webkit-justify-content:flex-end;
+}
+
+.header > .btn-box > .btn{
+    width:100px;
+    height:100%;
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    align-items:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-justify-content:center;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+    margin-right:20px;
+}
+
+.sign-up{
+    background-color:rgb(79,169,94);
+}
+
+.login{
+    background-color:rgb(44,113,187);
+}
+
+
+.jutalk-menu{
+    width:80%;
+    height:5%;
+
+    margin:auto;
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    align-items:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+}
+
+.jutalk-menu > .jutalk-judata{
+    width:250px;
+    height:80%;
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-justify-content:center;
+
+    align-items:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+}
+
+.jutalk-judata > .judata-num{
+    font-weight:100;
+    color:rgba(0,0,0,0.7);
+
+    font-size:15px;
+
+    margin-top:3px;
+
+    margin-right:3px;
+}
+
+.jutalk-judata > .judata-name{
+    font-weight:100;
+    font-size:17px;
+
+    margin-right:6px;
+}
+
+.jutalk-judata > .bu{
+    color:#326799;
+    font-weight:100;
+
+    font-size:15px;
+    margin-top:3px;
+}
+
+.jutalk-judata > i{
+    color:#326799;
+
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:10px;
+}
+
+
+.jutalk-menu > .jutalk-menu-item{
+    width:70%;
+    height:80%;
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+.jutalk-menu > .jutalk-menu-item > .jutalk-menu-name{
+    width:150px;
+    height:100%;
+
+    margin-top:3px;
+
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    align-items:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+
+    justify-content:center;
+    -ms-flex-pack:center;
+    -webkit-justify-content:center;
+}
+

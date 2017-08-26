@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JuTalk</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/x-icon">
+    <link rel="icon" href="css/favicon.png" type="image/x-icon">
+    <script src="https://use.fontawesome.com/10ffd9cc1b.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="event-findps">
+        <div class="findps-title">비밀번호 찾기</div>
+        <div class="findps-text">Yeah</div>
+        <div class="findps-btnbox">
+            <div class="findps-btn">완료</div>
+        </div>
+    </div>
+
+    <div class="event-findid">
+        <div class="findid-title">아이디 찾기</div>
+        <div class="findid-text">Yeah</div>
+        <div class="findid-btnbox">
+            <div class="findid-btn">완료</div>
+        </div>
+    </div>
+
+    <div class="event-passfind">
+        <div class="passfind-title">아이디/비밀번호 찾기</div>
+        <div class="passfind-input">
+            <input class="passfind-email" type="text" placeholder="이메일 주소">
+        </div>
+        <div class="passfind-btnbox">
+            <div class="passfind-id">아이디 찾기</div>
+            <div class="passfind-ps">비밀번호 찾기</div>
+        </div>
+    </div>
+
+    <div class="event-login">
+        <div class="event-title">주톡에 방문해주신 것을 환영합니다</div>
+        <div class="event-input">
+            <input class="login-id" type="text" placeholder="아이디">
+        </div>
+        <div class="event-input">
+            <input class="login-ps" type="text" placeholder="패스워드">
+        </div>
+        <div class="event-button">
+            로그인
+        </div>
+        <div class="event-setting">
+            <div class="event-signup-text">회원가입</div>
+            <div class="event-password-text">비밀번호 찾기</div>
+        </div>
+    </div>
+
+    <div class="event-add-pop-up">
+        <div class="event-add-close">
+            <i class="fa fa-times event-add-pop-up-cloes" aria-hidden="true"></i>
+        </div>
+        <div class="event-add-title">
+            <div class="big-title">종목 추가</div>
+            <div class="title-explain">관심종목을 즐겨찾기로 추가하세요</div>
+        </div>
+        <div class="event-add-search">
+            <input type="text" class="search-icon">
+
+            <i class="fa fa-search search-stock" aria-hidden="true"></i>
+        </div>
+        <div class="event-add-list">
+            <div class="event-add-content">
+                <!--<div class="content-number">005930</div>-->
+                <!--<div class="content-name">삼성전자</div>-->
+
+
+            </div>
+        </div>
+        <div class="event-add-btn-box">
+            <div class="event-add-btn">완료</div>
+        </div>
+    </div>
+
+    <div class="sign-up-popup">
+        <div class="sign-up-header">
+            <div class="sign-up-header-text">개인취급방칩 및 이용약관</div>
+            <i class="fa fa-times sign-up-popup-close" aria-hidden="true"></i>
+        </div>
+        <div class="sign-up-long-text">
+            <h2>개인정보취급방침</h2><br><br>
+
+            <h2>제 1 조. 개인정보 수집 및 이용목적</h2><br>
+            본 정책은Jootalk(이하 '주톡')이 서비스이용자 (이하 ‘회원’)에게 본 웹사이트의 서비스를 제공함과 동시에 온라인 상에서 회원이 제공한 개인정보가 보호받을 수 있도록 하는데 그 목적이 있습니다.<br>
+            주톡은 ‘약관의 규제에 관한 법률’, ‘정보통신망법’, ‘전기통신사업법’ ‘정보통신망 이용촉진 등에 관한 법률’ 등 온라인 정보서비스 제공자가 준수해야 할 관련법규를 바탕으로 개인정보 보호정책을 수립해 실천하고 있습니다. 다만, 주톡의 공식 사이트 이외의 링크된 사이트에서는 본 웹사이트의 ‘개인정보 취급방침이 적용되지 않습니다.<br>
+            본 웹사이트에서 제공하는 개인보호정책은 정부의 관련법률지침 및 웹사이트의 내부사정 등으로 인하여 변경가능하며 이때 주톡 커뮤니티는 즉시 홈페이지에 당 변경내용을 게시합니다.<br>
+            ‘필수입력항목’은 주톡은 서비스를 제공함에 있어서 보다 효율화 된 방법으로 컨텐츠를 제공하고자 하는데 그 의도가 있으며 또한 회원으로 등록하지 않은 외부의 불법적인 홈페이지 접근(해킹 및 자료의 불법도용)을 차단하여 서비스를 안전하게 회원에게 제공하는데 그 목적이 있습니다.<br>
+            주톡은 개인정보 보호정책을 웹사이트 하단에 공개함으로써 회원께서 언제나 용이하게 볼 수 있도록 조치합니다.<br><br>
+
+            <h2>제 2 조. 수집하는 개인정보의 항목</h2><br>
+            필수항목: ID, 비밀번호, 닉네임, 이메일<br>
+            선택항목: 홈페이지, 휴대폰 번호 및 자기 소개<br>
+            ※ 서비스 이용과정에서, 접속 IP정보가 주톡 서버에, 쿠키 정보 사용자의 PC에 생성되어 수집될 수 있습니다.<br><br>
+
+            <h2>제 3 조. 개인정보의 보유 및 이용기간</h2><br>
+            주톡은 기본적으로 회원에게 수집한 정보에 대해 회원의 별도통보나 서비스 탈퇴의사가 없는 한 주톡의 운영방침에 따라 이를 계속 보유할 수 있으며, 이를 서비스 제공 등을 위해 이용합니다.<br>
+            개별적인 탈퇴의사가 있을 경우 회원자신이 온라인상에서 주톡이 지정한 정식탈퇴과정을 거쳐야 합니다.<br><br>
+
+            <h2>제 4 조. 회원 탈퇴 시 보존 개인정보</h2><br>
+            원칙적으로 '활동 제한 징계(주의, 경고, 최종경고, 강제퇴장, 영구강퇴)‘를 받아 활동 제한 중인 회원이 아닌 모든 회원은, 본 웹사이트가 제공하는 서비스 내의 회원탈퇴 기능을 통하여 언제라도 탈퇴를 요청할 수 있습니다. 운영진의 탈퇴승인 시, 모든 개인정보는 재생될 수 없도록 서버에서 영구 소멸되며, 추후 게시물 및 코멘트 작성이 불가능하게 됩니다.<br>
+            '활동 제한 징계(주의, 경고, 최종경고, 강제퇴장, 영구강퇴)‘를 받아 활동 제한 중인 회원의 경우, 본인의 의지대로 탈퇴할 수 없으며, 이는 주톡 운영에 부담을 준 회원의 무분별한 재 가입을 막기 위한, 본 웹사이트를 보호하는 가장 소극적인, 최소한의 방어책입니다. ‘최종접속 시 IP주소’ 등의 자료는 운영진이 영구보관 하도록 합니다. <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>이용약관</h2><br>
+
+            본 약관은 본 웹사이트 Jootalk (이하 '주톡') 이용에 관련하여, 사이트와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.<br><br>
+
+            <h2>제 1 조. 이용 계약의 성립</h2><br>
+            이용계약은 가입신청자가 약관의 내용에 대하여 동의를 한 후, 회원가입신청을 함으로써 체결됩니다. 회원가입신청 후, 주톡 웹사이트 내 모든 게시판의 게시물 및 코멘트 작성이 자유롭게 가능합니다.<br>
+            허나 사이트는 다음 사항에 해당하는 회원의 경우에는 사후에 이용제한, 영구접근거부 및 이용계약 해지를 할 수 있습니다. <br><br>
+
+            - 가입신청자가 이전에 회원자격을 상실한 적이 있는 경우.<br>
+            - 광고, 음란 게시물 개재 등 일반적이지 않은 목적으로 가입하였다고 판단하는 경우.<br>
+            - 1인 다 ‘ID’일 경우: 주톡 1인 1ID를 원칙으로 하고 있으며, 다중 ID 사용을 엄격하게 제한하고 있습니다. 적발 시, 명확한 해명이 없을 경우, 경고 없이 바로 ‘영구강퇴’의 징계가 내려집니다.<br>
+            자세한 회원관리 원칙은 본 웹사이트 하단 ‘사이트 운영원칙’을 참고하여 주시기 바랍니다.<br><br>
+
+            <h2>제 2 조. 회원의 의무</h2><br>
+            - 회원의 이용권한은 회원 개인에 한정되며, 타인에게 양도, 증여하거나 이를 담보로 제공할 수 없습니다.<br>
+            - 회원의 아이디와 비밀번호에 관한 관리책임은 회원에게 있으며, 이를 제 3자가 이용하도록 하여서는 안됩니다. 비밀번호 도용에 의하여 발생한 불이익에 대하여 본 웹사이트는 어떠한 책임도 지지 않습니다. 회원은 아이디 및 비밀번호가 도용되거나 제 3자가 사용하고 있음을 인지한 경우에는 이를 즉시 통지하고, 운영진의 안내에 따라야 합니다.<br>
+            - 회원은 본 서비스 이용 중 습득한 정보를 상업적 목적으로 이용하거나 출판, 방송 등을 통하여 본 웹사이트의 허락 없이 제3자에 노출시키는 행위를 할 수 없습니다. 단, 공익 목적이나 회원의 이익을 위하여 필요한 경우에는 회사에게 협의를 요청하고 사전 동의를 구하도록 합니다<br>
+            - 회원은 제3자의 권리나 저작권 등을 침해하는 행위를 할 수 없습니다.<br>
+            - 회원은 본 웹사이트의 사이트 운영을 저해하거나 타 회원의 서비스 이용을 방해하거나 본 웹사이트의 운영진을 사칭하는 행위를 할 수 없습니다<br><br>
+
+            <h2>제 3 조. 회원의 게시물</h2><br>
+            - 게시물이라 함은, 본 웹사이트 내에 회원이 올린 글, 사진, 동영상, 각종 파일과 링크, 각종 코멘트 등의 정보를 의미합니다.<br>
+            - 회원이 서비스 내에 게시한 게시물로 인해 회원 개인에게 발생하는 손실이나 문제는 회원 개인의 책임이므로, 게시물 작성 시 관련법령에 위배되지 않도록 유의해야 합니다.<br>
+            - 상업 및 음란 게시물 등, 게시판 성격에 부적합 하다고 판단되는 게시물은, 운영진에 의해 이동이 가능합니다. 게시물 이동 및 삭제시, 회원에게 쪽지로 통보하도록 되어 있습니다. <br><br>
+            자세한 게시물 관리 원칙은 본 웹사이트 하단 ‘사이트 운영원칙’을 참조하여 주시기 바랍니다.<br><br>
+
+            <h2>제 4 조. 계약해지 및 이용제한</h2><br>
+            - 회원은 본 웹사이트가 제공하는 서비스 내의 회원탈퇴 기능을 통하여 언제라도 탈퇴를 요청할 수 있습니다. '강제퇴장(이용중지)' 및 ‘영구강퇴(영구접근거부)’징계를 받지 않은 회원의 경우, 주톡 운영진은 지체 없이 회원탈퇴 요청을 처리합니다.<br>
+            - 회원이 법령 또는 이 약관이 금지하거나 ‘사이트 운영원칙’에 위배되는 행위를 한 경우, 운영진은 서비스 이용권한을 일정시간 제한하거나, ‘영구강퇴’를 통해 이용권한을 상실시킬 수 있습니다. 단, 회원이 이를 시정하거나 소명할 수 있는 기회가 부여되도록 합니다.<br>
+            - '강제퇴장' 혹은 ‘영구강퇴’조치를 받은 회원의 경우, 본인의 의지대로 탈퇴할 수 없으며, 이는 ‘영구강퇴’회원의 재 가입을 막기위한, 본 웹사이트를 보호하는 가장 소극적인, 최소한의 방어책입니다. ‘접속 IP, 접속 환경’ 등의 자료는 운영진이 영구보관 하도록 합니다. <br>
+        </div>
+        <div class="sign-up-popup-radio">
+            <input type="checkbox" class="sign-up-popup-check">
+            <div class="sign-up-popup-radio-text">개인정보방침과 이용약관에 동의합니다</div>
+        </div>
+        <div class="sign-up-title">회원정보</div>
+        <div class="sign-up-input-box">
+            <div class="sign-up-name">아이디</div>
+            <input type="text" class="id">
+        </div>
+
+        <div class="sign-up-null-box">
+            <div class="null"></div>
+            <div class="null-text">아이디는 6자리 이상(영문과 숫자를 조합)이어야 합니다</div>
+        </div>
+
+        <div class="sign-up-input-box">
+            <div class="sign-up-name">비밀번호</div>
+            <input type="text" class="ps">
+        </div>
+
+        <div class="sign-up-null-box">
+            <div class="null"></div>
+            <div class="null-text">비밀번호는 6자리 이상(영문과 숫자를 조합)이어야 합니다</div>
+        </div>
+
+        <div class="sign-up-input-box">
+            <div class="sign-up-name">비밀번호 확인</div>
+            <input type="text" class="ps-check">
+        </div>
+
+        <div class="sign-up-input-box">
+            <div class="sign-up-name">이메일 주소</div>
+            <input type="text" class="email">
+        </div>
+
+        <div class="sign-up-null-box">
+            <div class="null"></div>
+            <div class="null-text">인증 메일이 발송되니 정확하게 입력해 주시기 바랍니다</div>
+        </div>
+
+        <div class="sign-up-input-box">
+            <div class="sign-up-name">닉네임</div>
+            <input type="text" class="nickname">
+        </div>
+
+        <div class="sign-up-input-box">
+            <div class="sign-up-name">메일링 가입</div>
+            <input class="radio-yes" type="checkbox">예
+            <input class="radio-no" type="checkbox">아니요
+        </div>
+        <diiv class="sign-up-btn-box">
+            <div class="login-btn">로그인</div>
+            <div class="signup-btn">회원가입</div>
+        </diiv>
+    </div>
+
+    <div class="header">
+        <div class="logo"></div>
+        <div class="search-bar">
+            <input class="search-input" type="text" placeholder="정확한 종목명 혹은 종목코드를 입력해주세여">
+            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+
+        <div class="btn-box">
+            <div class="btn sign-up">회원가입</div>
+            <div class="btn login">로그인</div>
+        </div>
+    </div>
+
+    <div class="jutalk-menu">
+        <div class="jutalk-judata">
+            <div class="judata-num">
+                005930
+            </div>
+            <div class="judata-name">
+                안랩
+            </div>
+
+            <div class="judata-price bu">
+                93,000
+            </div>
+            <i class="fa fa-sort-desc fa-2x" aria-hidden="true"></i>
+            <div class="judata-per bu">(3.14%)</div>
+        </div>
+        <div class="jutalk-menu-item">
+            <div class="jutalk-menu-name">실시간 주식</div>
+            <div class="jutalk-menu-name">주식 게시판</div>
+            <div class="jutalk-menu-name">자유 게시판</div>
+            <div class="jutalk-menu-name">고객 센터</div>
+        </div>
+    </div>
+    <div class="border"></div>
+    <div class="jutalk-content">
+        <div class="jutalk-chat">
+            <div class="jutalk-chat-title">
+                <div class="jutalk-chat-title-content-room">안랩1</div>
+                <div class="jutalk-chat-title-content br">접속자</div>
+                <div class="jutalk-chat-title-content br">채팅방</div>
+                <div class="jutalk-chat-title-content br">접속규정</div>
+            </div>
+            <div class="jutalk-chat-menu">
+                <div class="num">0/50</div>
+                <div class="icon">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                    <i class="fa fa-eraser" aria-hidden="true"></i>
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="jutalk-chat-list">
+                <!-- <div class="jutalk-chat-list-user-box">
+                    <div class="jutalk-user">Yeah~</div>
+                    <div class="jutalk-user user-border">Yeah~</div>
+                    <div class="jutalk-user">Yeah~</div>
+                </div>
+                <div class="jutalk-chat-list-user-box">
+                    <div class="jutalk-user">Yeah~</div>
+                    <div class="jutalk-user user-border">Yeah~</div>
+                    <div class="jutalk-user">Yeah~</div>
+                </div>
+                <div class="jutalk-chat-list-user-box">
+                    <div class="jutalk-user">Yeah~</div>
+                    <div class="jutalk-user user-border">Yeah~</div>
+                    <div class="jutalk-user">Yeah~</div>
+                </div>
+                <div class="jutalk-chat-list-user-box">
+                    <div class="jutalk-user">Yeah~</div>
+                    <div class="jutalk-user user-border">Yeah~</div>
+                    <div class="jutalk-user">Yeah~</div>
+                </div>
+                <div class="jutalk-chat-list-user-box">
+                    <div class="jutalk-user">Yeah~</div>
+                    <div class="jutalk-user user-border">Yeah~</div>
+                    <div class="jutalk-user">Yeah~</div>
+                </div> -->
+            </div>
+
+            <div class="jutalk-chat-content">
+                <!-- <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div>
+                <div class="jutalk-chat-text">소크라테스 : 소크라테스</div> -->
+            </div>
+            <div class="jutalk-chat-bottom">
+                <div class="jutalk-chat-input">
+                    <!-- 로그인 뒤에 이용해주세요 -->
+                    <input type="text" class="jutalk-chat-input-box">
+                </div>
+                <div class="jutalk-chat-in">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="jutalk-chat-room">
+                <div class="room-title">
+                    <div class="room-name">방제</div>
+                    <div class="room-num">총인원</div>
+                    <div class="room-go"></div>
+                </div>
+                <div class="room-content">
+                    <div class="room-name"><p class="room-name-text">안랩1</p></div>
+                    <div class="room-num">0/50명</div>
+                    <div class="room-go">입장</div>
+                </div>
+            </div>
+            <div class="jutalk-chat-rule">
+                <h3>영구차단</h3><br>
+                1. 저작권위반 링크 (영구차단)<br>
+                2. 타 사이트 /불법 사이트 홍보 (영구차단)<br>
+                3. 상업적인 홍보 (영구차단)<br>
+                4. 연락처 공유 (카톡, 라인, 밴드)<br>
+                5. 지역감정유발/기타 분란 행위 (영구차단)<br>
+                6. 욕설 등 비매너 행위 (영구차단)<br>
+                7. 누적 신고 50회 (영구차단)<br>
+                8. 과도한 음담패설 (영구차단)<br><br>
+                <h3>대화가 금지되는 경우</h3><br>
+                1. 관심을 끌기 위한 어그로(30분)<br>
+                2. 누적 신고 5회 이상 (1일)<br>
+                3. 누적 신고 15회 이상 (7일)<br>
+                4. 누적 신고 30회 이상 (30일)<br>
+            </div>
+        </div>
+
+        <div class="jutalk-board">
+            <div class="jutalk-board-title">
+                <div class="board-title-item">
+                    <div class="board-item-name">종목추가</div>
+                    <div class="board-item-name br">실시간 코스닥</div>
+                    <div class="board-item-name br">실시간 코스피</div>
+                    <div class="board-item-name br">인기 채팅방</div>
+                </div>
+                <div class="board-title-btn">
+                    + 종목추가
+                </div>
+            </div>
+            <div class="jutalk-board-alert">
+                주톡은 본 정보의 정확성에 대해 보증하지 않으며, 본 정보를 이용한 투자에 대한 책임은 해당 투자자에게 귀속됩니다.
+            </div>
+            <div class="jutalk-list-menu">
+                <div class="list-code">종목 코드</div>
+                <div class="list-name">종목명</div>
+                <div class="list-price">현재가</div>
+                <div class="list-bi">전일비</div>
+                <div class="list-per">등락률</div>
+                <div class="list-star">즐겨찾기</div>
+                <div class="list-chat">채팅방</div>
+            </div>
+            <!--<div class="jutalk-list-content">-->
+                <!--<div class="list-code">005930</div>-->
+                <!--<div class="list-name">삼성전자</div>-->
+                <!--<div class="list-price">2,045,000</div>-->
+                <!--<div class="list-bi">30000</div>-->
+                <!--<div class="list-per">등락률</div>-->
+                <!--<div class="list-star"><i class="fa fa-star-o" aria-hidden="true"></i></div>-->
+                <!--<div class="list-chat">-->
+                    <!--<div class="list-chat-btn">참여</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="jutalk-list-content-text">-->
+                <!--종목을 추가해보세요.-->
+            <!--</div>-->
+        </div>
+    </div>
+
+<script src="js/index.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
